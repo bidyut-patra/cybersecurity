@@ -1,0 +1,1 @@
+g++ main.cpp injector.cpp -o .\bin\process_injector.exe
