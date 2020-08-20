@@ -1,0 +1,4 @@
+﻿  injector_helper.cpp
+c:\work@se\projects\process_injection\injector\injector_helper.cpp(55): warning C4018: '<': signed/unsigned mismatch
+c:\work@se\projects\process_injection\injector\injector_helper.cpp(67): warning C4018: '<': signed/unsigned mismatch
+  injector.vcxproj -> C:\WORK@SE\Projects\process_injection\Debug\injector.exe
