@@ -1,0 +1,14 @@
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\bin\Debug\target.exe.config
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\bin\Debug\target.exe
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\bin\Debug\target.pdb
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\MainWindow.g.cs
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\App.g.cs
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target_MarkupCompile.cache
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target_MarkupCompile.lref
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\MainWindow.baml
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.g.resources
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.Properties.Resources.resources
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.csproj.GenerateResource.cache
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.csproj.CoreCompileInputs.cache
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.exe
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.pdb

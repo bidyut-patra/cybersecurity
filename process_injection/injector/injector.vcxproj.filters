@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\WORK%40SE\Projects\process_injection\injector\injector.cpp">
+    <ClCompile Include=".\injector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\WORK%40SE\Projects\process_injection\injector\injector_helper.cpp">
+    <ClCompile Include=".\injector_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\WORK%40SE\Projects\process_injection\injector\injector_helper.h">
+    <ClInclude Include=".\injector_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

