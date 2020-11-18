@@ -12,3 +12,4 @@ C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\targ
 C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.csproj.CoreCompileInputs.cache
 C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.exe
 C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.pdb
+C:\WORK@SE\Projects\GitHub\cybersecurity\process_injection\target\obj\Debug\target.csprojAssemblyReference.cache
